@@ -1,3 +1,9 @@
+var x = 50;
+var y = 50;
+var speedX = 2;
+var speedY = 5;
+
+
 /**
  * setup
  * de code in deze functie wordt één keer uitgevoerd door
@@ -19,8 +25,32 @@ function setup() {
  */
 function draw() {
   // stel vulkleur in
-  fill(100, 100, 255);
+  fill(255, 255, 255);
+
+  background('blue');
 
   // teken een cirkel
-  ellipse(50,50,80,80);
+  ellipse(x,y,80,80);
+//beweging van de bal
+  x= x+speedX;
+  y= y+speedY;
+
+  if (y === 720){
+    speedY = speedY * -1;
+  }
+
+  if (y === 0){
+    speedY = speedY * -1;
+  }
+
+  if (x === 1280){
+    speedX = speedX * -1;
+  }
+
+  if (x === 0){
+    speedX = speedX * -1;
+  }
 }
+
+
+  
