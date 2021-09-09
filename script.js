@@ -1,5 +1,5 @@
-var xPositie = [50,60,70,80,90];
-var yPositie = [50,100,20,80,60];
+var xPositie = [10,100,300,400,600];
+var yPositie = [0,100,400,200,50];
 var speedX = 2;
 var speedY = 5;
 
@@ -32,14 +32,14 @@ function draw() {
   // teken een cirkel
   for (var i = 0; i < xPositie.length; i++) {
     ellipse(xPositie[i], yPositie[i], 80, 80);
-    xPositie = xPositie + speedX;
-    yPositie = yPositie + speedY;
+    yPositie[i] = yPositie [i] + speedY;
+    xPositie[i] = xPositie[i] +speedX;
+
 
   }
 
 //beweging van de bal
-xPositie = xPositie + speedX;
-yPositie = yPositie + speedY;
+
   if (yPositie === 720){
     speedY = speedY * -1;
   }
