@@ -3,24 +3,19 @@ class Bal{
     y;
     speedX;
     speedY;
-    kleur;
 
-    constructor(_x, _y){
+    constructor(_x, _y, _speedX, _speedY){
         this.x = _x;
         this.y = _y;
-        this.speedX = 2;
-        this.speedY = -3;
-        this.kleur = color(255,0,0);
+        this.speedX = _speedX;
+        this.speedY = _speedY;
     }
 
-    show(){
-        fill(this.kleur);
-        ellipse(this.x, this.y, 80,80);
-
-    
-    }
 
     update(){
+        this.x = this.x + this.speedX;
+        this.y = this.y + this.speedY;
+
         if(this.x <= 0 || this.x >= 1280){
             this.speedX = this.speedX * -1;
         }
@@ -29,7 +24,12 @@ class Bal{
         }
     }
 
+    show(){
+        fill(255, 0, 0);
+        ellipse(this.x, this.y, 50,50);
 
+    
+    }
 
 
 
