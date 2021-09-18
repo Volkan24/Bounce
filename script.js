@@ -18,10 +18,10 @@ function setup() {
     var bal = new Bal (randomX, randomY, randomspeedX, randomspeedY);
     ballen.push(bal);
   }
-  var superbal = new SuperBall (600,100,10,10);
+  var superbal = new SuperBall (600,100,5,-5);
   ballen.push(superbal);
 
-  var nummerbal = new nummerBal (200,200,20,20);
+  var nummerbal = new NummerBal (200,200,5,5);
   ballen.push(nummerbal);
 
 }
@@ -38,6 +38,7 @@ function draw() {
     ballen[i].show();
     ballen[i].update();
   }
+
 
  
 }
