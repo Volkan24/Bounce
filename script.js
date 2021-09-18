@@ -20,6 +20,10 @@ function setup() {
   }
   var superbal = new SuperBall (600,100,10,10);
   ballen.push(superbal);
+
+  var nummerbal = new nummerBal (200,200,20,20);
+  ballen.push(nummerbal);
+
 }
 
   
