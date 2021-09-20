@@ -15,7 +15,7 @@ class NummerBal extends Bal {
       ellipse(this.x,this.y ,45,45);
       textSize(25);
       fill(0,0,0);
-      text("8",this.x-6, this.y+6);
+      text("8",this.x, this.y);
   }  
 
 }
