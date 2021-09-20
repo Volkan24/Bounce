@@ -17,11 +17,7 @@ class NummerBal extends Bal {
       fill(0,0,0);
       text("8",this.x-6, this.y+6);
   }  
-  
- //Math.floor((Math.random()*100) +1) 
- //eventueel gebruiken voor random nummers die elkaar de hele tijd afwisselen  
-  
-  
+
 }
   
   
